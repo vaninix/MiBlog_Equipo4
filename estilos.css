@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333; /* Cambia el color de fondo de los botones */
+}
+
+nav ul li {
+    display: inline-block; /* Cambia de inline a inline-block */
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    display: block; /* Añade display block para que los enlaces ocupen todo el espacio de sus contenedores */
+    background-color: #4CAF50; /* Color de fondo verde para los botones */
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    color: #fff; /* Color de texto blanco para los botones */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Añade bordes redondeados a los botones */
+    margin-bottom: -5px; /* Añade un margen negativo para compensar el padding en la parte inferior */
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto-descripcion {
+    flex: 1;
+    margin-right: 20px;
+    padding: 90px;
+    text-align: justify;
+}
+
+.imagen {
+    flex: 1;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 90px; /* Agrega margen inferior para separar del borde */
+    margin-left: 90px; /* Agrega margen izquierdo para separar del borde */
+    margin-right: 90px;
+    text-align: justify;
+}
+
+.columna {
+    flex: 1;
+    margin-right: 0px;
+}
+.video-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido anterior */
+}
+.video{
+    text-align: left; /* Alinea el contenido al lado izquierdo */
+    margin-left: 90px;
+}
+.texto-video {
+    flex: 1; /* Ocupa todo el ancho disponible */
+    margin-left: 250px;
+}
+
+.texto-video p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+}
+.audio-container {
+    margin-right: 170px;
+    text-align: right; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px; /* Añade un espacio en la parte inferior del contenedor */
+}
+.imagen-derecha img {
+    margin-left: 250px;
+    max-width: 50%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+.redes-sociales {
+    text-align: left;
+    margin-top: 20px;
+}
+.redes-sociales h2{
+   font-size: 1.5em;
+   margin-right: 0px;
+    margin-left: 100px;
+}
+
+.slogan {
+    margin-right: 10px; /* Espacio entre el texto y los iconos */
+}
+
+.iconos-redes a{
+    margin-top: 0 10px;
+    font-size: 24px;
+}
+
+.iconos-redes a {
+    margin-left: 5px; /* Espacio entre los iconos */
+    font-size: 24px;
+}
+.texto-arriba{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 110px;
+    margin-bottom: 5px;
+}
+.fuente{
+    text-align: left;
+    margin-top: 20px
+
+ }
+.fuente h4{
+    font-size: 2px;
+    margin-right: 0px;
+     margin-left: 100px;
+ }
+ .enlace-derecha {
+    text-align: right;
+    display: block;
+    /* Añade cualquier otro estilo adicional que desees */
+    color: blue; /* Por ejemplo, color azul */
+    text-decoration: none; /* Para quitar subrayado de los enlaces */
+}
+.enlace-izquierda {
+    text-align: left;
+    display: block;
+    /* Añade cualquier otro estilo adicional que desees */
+    color: blue; /* Por ejemplo, color azul */
+    text-decoration: none; /* Para quitar subrayado de los enlaces */
+}
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Ancho del carrusel */
+    margin: 0 auto;
+}
+
+/* Estilos para cada imagen en el carrusel */
+.imagen-carrusel {
+    flex: 0 0 auto;
+    width: 100%; /* Ajusta el ancho de la imagen */
+    display: none; /* Oculta todas las imágenes por defecto */
+}
+
+/* Estilos para mostrar la imagen activa */
+.imagen-activa {
+    display: block; /* Muestra la imagen activa */
+}
+.botones-container {
+    text-align: center; /* Centra los botones horizontalmente */
+    margin-top: 10px;
+}
+.carrusel-container {
+    width: 300px; /* Ancho del carrusel */
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
+

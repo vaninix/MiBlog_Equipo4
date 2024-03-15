@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>CARRUSEL</h1>
+    </header>
+    <ul>
+    </ul>
+    
+    <div class="carrusel">
+
+
+        <img class="imagen-carrusel imagen-activa" src="imagen/imagen1.jpg" alt="Imagen 1">
+        <img class="imagen-carrusel" src="imagen/imagen2.jpg" alt="Imagen 2">
+        <img class="imagen-carrusel" src="imagen/imagen3.jpg"Imagen 3">
+        <img class="imagen-carrusel" src="imagen/imagen4.jpg" alt="Imagen 4">
+        <img class="imagen-carrusel" src="imagen/imagen5.jpg" alt="Imagen 5">
+        <img class="imagen-carrusel" src="imagen/imagen6.jpg" alt="Imagen 5">
+        <img class="imagen-carrusel" src="imagen/imagen7.jpg" alt="Imagen 5">
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+    <div class="botones-container">
+    <button onclick="mostrarAnterior()">Anterior</button> <!-- Botón para retroceder a la imagen anterior -->
+    <button onclick="mostrarSiguiente()">Siguiente</button> <!-- Botón para mostrar la siguiente imagen -->
+    <script>
+        let index = 0; // Índice de la imagen activa
+
+        function mostrarSiguiente() {
+            const imagenes = document.querySelectorAll('.imagen-carrusel');
+            imagenes[index].classList.remove('imagen-activa'); // Oculta la imagen actual
+            index = (index + 1) % imagenes.length; // Calcula el índice de la siguiente imagen
+            imagenes[index].classList.add('imagen-activa'); // Muestra la siguiente imagen
+        }
+        function mostrarAnterior() {
+    const imagenes = document.querySelectorAll('.imagen-carrusel');
+    imagenes[index].classList.remove('imagen-activa'); // Oculta la imagen actual
+    index = (index - 1 + imagenes.length) % imagenes.length; // Calcula el índice de la imagen anterior
+    imagenes[index].classList.add('imagen-activa'); // Muestra la imagen anterior
+}
+    </script>
+   <div style="text-align: center; margin: 0 auto; max-width: 600px;">
+    <h2>Trabajo en Equipo en la Creación de un Blog: Superando Obstáculos</h2>
+</div>
+
+<div style="text-align: justify; margin: 0 auto; max-width: 600px;">
+    <p>En el siguiente carrusel de imágenes, mostramos el trabajo en equipo que realizamos para desarrollar el siguiente blog. A lo largo del proceso, nos enfrentamos a varios contratiempos que pusieron a prueba nuestra colaboración y creatividad.</p>
+
+    <h3>Desafíos Superados</h3>
+    <ul>
+        <li><strong>Colocación de Imágenes:</strong> Uno de los principales obstáculos fue la colocación de algunas imágenes en dos columnas. Esta disposición fue crucial para mejorar la estética y la accesibilidad del blog.</li>
+        <li><strong>Creación del Carrusel:</strong> Implementar un carrusel de imágenes también fue un desafío importante. Requería habilidades técnicas y creativas para garantizar su funcionalidad y atractivo visual.</li>
+    </ul>
+
+    <h3>Conclusiones y Aprendizajes</h3>
+    <p>Después de enfrentar estos desafíos, llegamos a la conclusión de que trabajar en equipo nos permitió superar obstáculos de manera más efectiva. La colaboración entre nosotros fue clave para encontrar soluciones creativas y técnicas para mejorar el blog.</p>
+
+    <p>En resumen, este proyecto no solo nos permitió mejorar nuestras habilidades individuales, sino que también fortaleció nuestra capacidad para trabajar juntos en entornos desafiantes.</p>
+</div>
+</article>
+    <a href="BlogGabriel.html">Página Anterior</a>
+</body>
+</html>
